@@ -1,0 +1,31 @@
+.woomc-switcher { padding: 0; margin: 0; background: #ffffff; list-style: none; width: 100%; z-index: 100; }
+.woomc-switcher .woomc-switcher-item { display: none; border: 1px solid #cacaca; }
+.woomc-switcher .woomc-switcher-item:first-child { display: block; position: relative; }
+.woomc-switcher .woomc-switcher-item:first-child:after { content: ""; border-color: #000000 transparent; border-width: 10px 10px 0 10px; border-style: solid; position: absolute; right: 10px; top: 1.3em; width: 0; height: 0; }
+
+.woomc-switcher:hover .woomc-switcher-item { display: block; }
+.woomc-switcher .woomc-switcher-item:hover { background: #eaeaea; transition: background-color 1s; -webkit-transition: background-color 1s; }
+.woomc-switcher .woomc-switcher-item:first-child:hover { background: #ffffff; }
+
+.woomc-switcher-item a { display: flex; padding: 5px 0px; line-height: 30px; align-items: center; }
+.woomc-switcher-item .switcher-element { display: inline-block; flex-grow: 1; vertical-align: middle; width: 50%; }
+.switcher-element img { display: inline-block; vertical-align: middle; }
+    .flag-element { text-align: center; }
+.flag-element + .price-element { text-align: left; }
+
+/* Currency Bar */
+.woomc-currency-bar { position: fixed; top: 50%; transition: all 1s; width: 192px; z-index: 110; }
+.woomc-currency-bar.pos-left { left: -144px; }
+.woomc-currency-bar.pos-right { right: -144px; }
+    .woomc-currency-bar.pos-left:hover { left: 0;  }
+    .woomc-currency-bar.pos-right:hover { right: 0; }
+
+.currency-bar-row { margin: 2px 0; border: 1px solid #999999; }
+.pos-left .currency-bar-row { border-radius: 0px 8px 8px 0px; }
+.pos-right .currency-bar-row { border-radius: 8px 0px 0px 8px; }
+
+.pos-left .currency-bar-row a { flex-direction: row; }
+.pos-right .currency-bar-row a { flex-direction: row-reverse; }
+.currency-bar-row a { display: flex; justify-content: center; align-items: center; }
+    .currency-bar-row a span { flex-grow: 3; text-align: center; }
+.currency-bar-row a img { border-radius: 0px; }
